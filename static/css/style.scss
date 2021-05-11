@@ -7,20 +7,16 @@ $footer-background: rgb(29, 31, 36);
 $main-font: "Roboto", sans-serif;
 $logo-color: #1d1f24;
 $card-margin: 20px;
-$breakpoint-pc: 1024px;
-$breakpoint-tablet: 768px;
-$breakpoint-telephone: 480px;
 
 /*General Styles*/
-@media (min-width: 320px) and (max-width: $breakpoint-telephone) {
-	// 480px altında tek sütün
+@media (max-width: 480px) {
 	.flex-list {
 		.column {
-			flex-basis: 100% !important;
+			flex-basis: 50% !important;
 		}
 	}
 }
-@media (min-width: $breakpoint-telephone) and (max-width: $breakpoint-tablet) {
+@media (min-width: 480px) and (max-width: 1024px) {
 	// 768px altında iki sütün
 	.flex-list {
 		.column {
@@ -37,7 +33,7 @@ $breakpoint-telephone: 480px;
 		}
 	}
 }
-@media (min-width: $breakpoint-pc) {
+@media (min-width: 1024px) {
 	.flex-list {
 		.column {
 			flex-basis: 33.3333% !important;
