@@ -20,16 +20,24 @@ $breakpoint-telephone: 480px;
 		}
 	}
 }
-@media (min-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-pc) {
 	// 768px altında iki sütün
 	.flex-list {
 		.column {
 			flex-basis: 50% !important;
 		}
 	}
+	.flex-list .column:last-child {
+		flex-grow: 2;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.card {
+			width: 50%;
+		}
+	}
 }
 @media (min-width: $breakpoint-pc) {
-	// 768px altında iki sütün
 	.flex-list {
 		.column {
 			flex-basis: 33.3333% !important;
@@ -142,7 +150,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	flex: 0 0 auto;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	align-items: flex-start;
 	.column {
 		flex: 0 0 auto;
