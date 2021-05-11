@@ -61,6 +61,12 @@ body {
 	text-decoration: none;
 }
 /*sitewide*/
+body {
+	background-color: $page-background;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
 header {
 	display: flex;
 	align-items: flex-start;
@@ -117,6 +123,7 @@ main {
 }
 
 footer {
+	margin-top: auto;
 	font-family: $main-font;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -136,13 +143,6 @@ footer {
 			}
 		}
 	}
-}
-body {
-	background-color: $page-background;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex: 1 1 auto;
 }
 .flex-list {
 	display: flex;
