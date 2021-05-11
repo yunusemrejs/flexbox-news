@@ -1,8 +1,8 @@
 /*General Styles*/
 @media (max-width: 480px) {
   .flex-list .column {
-    -ms-flex-preferred-size: 50% !important;
-        flex-basis: 50% !important;
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
   }
 }
 
