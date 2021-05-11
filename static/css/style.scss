@@ -49,6 +49,7 @@ html,
 body {
 	font-weight: bold;
 	height: 100%;
+	overflow: auto;
 	overflow-x: hidden;
 }
 /*utilities*/
@@ -120,7 +121,7 @@ main {
 }
 
 footer {
-	margin-top: auto;
+	z-index: 1;
 	font-family: $main-font;
 	padding-top: 40px;
 	padding-bottom: 40px;

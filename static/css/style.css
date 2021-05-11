@@ -48,6 +48,7 @@ html,
 body {
   font-weight: bold;
   height: 100%;
+  overflow: auto;
   overflow-x: hidden;
 }
 
@@ -159,7 +160,7 @@ main {
 }
 
 footer {
-  margin-top: auto;
+  z-index: 1;
   font-family: "Roboto", sans-serif;
   padding-top: 40px;
   padding-bottom: 40px;
