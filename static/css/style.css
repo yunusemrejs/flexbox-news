@@ -1,4 +1,25 @@
 /*General Styles*/
+@media (min-width: 480px) {
+  .flex-list .column {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-list .column {
+    -ms-flex-preferred-size: 50% !important;
+        flex-basis: 50% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-list .column {
+    -ms-flex-preferred-size: 33.3333% !important;
+        flex-basis: 33.3333% !important;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -96,16 +117,7 @@ header nav .header-left ul li a {
 
 main {
   max-width: 100%;
-  padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 footer {
@@ -159,14 +171,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -176,13 +180,34 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-list .column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
   position: relative;
-  -ms-flex-preferred-size: 33.3333%;
-      flex-basis: 33.3333%;
-  padding: 0 20px 20px 20px;
+  padding: 20px;
   color: #202121;
 }
 
@@ -235,10 +260,10 @@ body {
 }
 
 .mid-card .card-image {
-  height: 300px;
+  height: 400px;
 }
 
 .small-card .card-image {
-  height: 180px;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
