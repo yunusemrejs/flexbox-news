@@ -20,7 +20,7 @@ $breakpoint-telephone: 480px;
 		}
 	}
 }
-@media (max-width: $breakpoint-pc) {
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-pc) {
 	// 768px altında iki sütün
 	.flex-list {
 		.column {
@@ -83,6 +83,7 @@ header {
 		.header-left {
 			display: flex;
 			align-items: center;
+			flex: 0 0 auto;
 			.header-logo {
 				padding: 30px 0 30px 30px;
 				.logo {
@@ -97,8 +98,10 @@ header {
 			}
 			ul {
 				display: flex;
+				flex: 0 0 auto;
+
 				li {
-					padding-left: 60px;
+					padding-left: 50px;
 					a {
 						font-size: 14px;
 						text-decoration: none;
