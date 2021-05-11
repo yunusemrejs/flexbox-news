@@ -1,5 +1,5 @@
 /*General Styles*/
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .flex-list .column {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;

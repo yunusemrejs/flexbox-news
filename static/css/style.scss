@@ -12,7 +12,7 @@ $breakpoint-tablet: 768px;
 $breakpoint-telephone: 480px;
 
 /*General Styles*/
-@media (max-width: $breakpoint-telephone) {
+@media (min-width: 320px) and (max-width: $breakpoint-telephone) {
 	// 480px altında tek sütün
 	.flex-list {
 		.column {
