@@ -62,9 +62,6 @@ body {
 }
 /*sitewide*/
 header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
 	display: flex;
 	align-items: flex-start;
 	font-family: $main-font;
@@ -114,14 +111,12 @@ header {
 	}
 }
 main {
+	z-index: 3;
 	max-width: 100%;
 	padding-top: 20px;
 }
 
 footer {
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
 	font-family: $main-font;
 	padding-top: 40px;
 	padding-bottom: 40px;
