@@ -20,7 +20,7 @@ $breakpoint-telephone: 480px;
 		}
 	}
 }
-@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-pc) {
+@media (min-width: $breakpoint-telephone) and (max-width: $breakpoint-tablet) {
 	// 768px altında iki sütün
 	.flex-list {
 		.column {
