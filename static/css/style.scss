@@ -81,7 +81,7 @@ header {
 		align-items: center;
 		padding: 6px;
 		width: 100%;
-		height: $navbar-heigth;
+		min-height: $navbar-heigth;
 		border-bottom: 2px solid #ebebeb;
 		.header-left {
 			display: flex;
