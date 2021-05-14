@@ -133,8 +133,8 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -171,7 +171,8 @@ header nav .header-left .header-logo {
 
 header nav .header-left .header-logo .logo {
   color: #1d1f24;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
   font-size: 25px;
 }
 
@@ -219,7 +220,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   background-color: #1d1f24;
   width: 100%;
 }
@@ -299,6 +301,7 @@ footer ul li a {
 }
 
 .card .category {
+  font-family: "Oswald", sans-serif;
   position: absolute;
   left: -5px;
   bottom: 8%;
@@ -314,7 +317,7 @@ footer ul li a {
   color: white;
   letter-spacing: 2px;
   font-size: 0.75em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
@@ -323,14 +326,16 @@ footer ul li a {
 }
 
 .card h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   padding-top: 2%;
 }
 
 .card .card-text {
   padding-top: 12px;
   color: #5f6165;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

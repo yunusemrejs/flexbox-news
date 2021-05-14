@@ -4,7 +4,8 @@ $navbar-heigth: 90px;
 $footer-heigth: 160px;
 $footer-links: white;
 $footer-background: rgb(29, 31, 36);
-$main-font: "Roboto", sans-serif;
+$main-font: "Lato", sans-serif;
+$logo-font: "Lato", sans-serif;
 $logo-color: #1d1f24;
 $card-margin: 20px;
 
@@ -135,8 +136,8 @@ body {
 header {
 	display: flex;
 	align-items: flex-start;
-	font-family: $main-font;
-	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
 	width: 100%;
 	nav {
 		display: flex;
@@ -153,7 +154,8 @@ header {
 				padding: 30px 0 30px 30px;
 				.logo {
 					color: $logo-color;
-					font-family: "Roboto", sans-serif;
+					font-family: $logo-font;
+					font-weight: 600;
 					font-size: 25px;
 					.logo-dot {
 						font-size: 30px;
@@ -189,7 +191,8 @@ main {
 
 footer {
 	display: flex;
-	font-family: $main-font;
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
 	background-color: $footer-background;
 	width: 100%;
 	ul {
@@ -235,6 +238,7 @@ footer {
 		}
 	}
 	.category {
+		font-family: "Oswald", sans-serif;
 		position: absolute;
 		left: -5px;
 		bottom: 8%;
@@ -253,12 +257,14 @@ footer {
 	}
 	h3 {
 		font-family: $main-font;
+		font-weight: 700;
 		padding-top: 2%;
 	}
 	.card-text {
 		padding-top: 12px;
 		color: #5f6165;
 		font-family: $main-font;
+		font-weight: 400;
 		font-size: 14px;
 	}
 }
