@@ -121,9 +121,9 @@ main {
 }
 
 footer {
+	display: block;
 	z-index: 1;
 	font-family: $main-font;
-	display: flex;
 	background-color: $footer-background;
 	width: 100%;
 	border-bottom: 2px solid black;
@@ -131,6 +131,7 @@ footer {
 		padding: 50px;
 		margin: auto;
 		display: flex;
+		align-items: center;
 		li {
 			padding-left: 15px;
 			a {
