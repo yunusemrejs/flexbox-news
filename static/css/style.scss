@@ -202,48 +202,82 @@ footer {
 	background-color: $footer-background;
 	width: 100%;
 	nav {
+		width: 100%;
 		display: flex;
-		.logo-copyright {
+		justify-content: space-between;
+		.footer-left {
 			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			.footer-logo {
-				padding: 30px 0 0 30px;
-				.logo {
-					line-height: 50px;
-					color: rgb(73, 75, 79);
-					font-family: $logo-font;
-					font-weight: 600;
-					font-size: 25px;
-					.logo-dot {
-						font-size: 30px;
-						color: red;
+			.logo-copyright {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				.footer-logo {
+					padding: 30px 0 0 30px;
+					.logo {
+						line-height: 50px;
+						color: rgb(73, 75, 79);
+						font-family: $logo-font;
+						font-weight: 600;
+						font-size: 25px;
+						.logo-dot {
+							font-size: 30px;
+							color: red;
+						}
+					}
+				}
+				.copyright {
+					font-family: "Lato", sans-serif;
+					font-weight: 400;
+					color: rgb(187, 187, 189);
+					margin-left: 30px;
+				}
+			}
+			ul {
+				padding: 10px 0px 0px 24px;
+				margin: auto;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-wrap: wrap;
+				width: 750px;
+				li {
+					width: 180px;
+					a {
+						text-align: start;
+						padding: 10px 60px 10px 60px;
+						font-size: 14px;
+						text-decoration: none;
+						color: $footer-links;
 					}
 				}
 			}
-			.copyright {
-				font-family: "Lato", sans-serif;
-				font-weight: 400;
-				color: rgb(187, 187, 189);
-				margin-left: 30px;
-			}
 		}
-		ul {
-			padding: 10px 0px 0px 24px;
-			margin: auto;
+		.footer-right {
 			display: flex;
-			justify-content: flex-start;
 			align-items: center;
-			flex-wrap: wrap;
-			width: 750px;
-			li {
-				width: 180px;
-				a {
-					text-align: start;
-					padding: 10px 60px 10px 60px;
-					font-size: 14px;
-					text-decoration: none;
-					color: $footer-links;
+			padding-right: 20px;
+			form {
+				display: flex;
+				justify-content: center;
+				input {
+					height: 35px;
+					font-size: 12px;
+					line-height: 10px;
+					letter-spacing: 1px;
+					border: 0;
+					border-radius: 0;
+				}
+				input[type="email"] {
+					font-family: "Lato", sans-serif;
+					font-weight: 400;
+					padding: 10px 15px 14px 15px;
+				}
+				input[type="submit"] {
+					font-family: "Oswald", sans-serif;
+					font-weight: 500;
+					background-color: rgb(255, 86, 92);
+					color: white;
+					padding: 11px 30px 14px 30px;
 				}
 			}
 		}
