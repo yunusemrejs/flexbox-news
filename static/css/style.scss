@@ -192,21 +192,44 @@ main {
 
 footer {
 	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
 	font-family: "Oswald", sans-serif;
 	font-weight: 500;
 	background-color: $footer-background;
 	width: 100%;
-	ul {
-		padding: 30px;
-		margin: auto;
+	nav {
 		display: flex;
-		align-items: center;
-		li {
-			padding-left: 15px;
-			a {
-				font-size: 14px;
-				text-decoration: none;
-				color: $footer-links;
+		.footer-logo {
+			padding: 30px 0 30px 30px;
+			.logo {
+				color: rgb(73, 75, 79);
+				font-family: $logo-font;
+				font-weight: 600;
+				font-size: 25px;
+				.logo-dot {
+					font-size: 30px;
+					color: red;
+				}
+			}
+		}
+		ul {
+			padding: 10px 0px 0px 0px;
+			margin: auto;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+			width: 750px;
+			li {
+				width: 180px;
+				a {
+					text-align: start;
+					padding: 10px 60px 10px 60px;
+					font-size: 14px;
+					text-decoration: none;
+					color: $footer-links;
+				}
 			}
 		}
 	}
