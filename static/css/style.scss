@@ -69,6 +69,7 @@ body {
 	flex: 1 1 auto;
 }
 header {
+	position: relative;
 	display: flex;
 	align-items: flex-start;
 	font-family: $main-font;
@@ -121,6 +122,8 @@ main {
 }
 
 footer {
+	position: relative;
+	bottom: 0px;
 	z-index: 1;
 	font-family: $main-font;
 	padding-top: 40px;
