@@ -319,19 +319,40 @@ footer nav .footer-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 40px;
+}
+
+footer nav .footer-right .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 18px;
+}
+
+footer nav .footer-right .social-media p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #a5a6a8;
+}
+
+footer nav .footer-right .social-media a {
+  padding: 0 10px 0 10px;
 }
 
 footer nav .footer-right form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer nav .footer-right form input {
