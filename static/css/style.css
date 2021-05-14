@@ -69,7 +69,7 @@
 
 @media (min-width: 1024px) {
   nav {
-    max-height: 90px;
+    max-height: 160px;
   }
   .mid-card .card-image {
     width: 100%;
@@ -83,6 +83,9 @@
   .flex-list .column {
     -ms-flex-preferred-size: 33.3333% !important;
         flex-basis: 33.3333% !important;
+  }
+  footer {
+    min-height: 160px;
   }
 }
 
@@ -236,24 +239,45 @@ footer nav {
   display: flex;
 }
 
-footer nav .footer-logo {
-  padding: 30px 0 30px 30px;
+footer nav .logo-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-footer nav .footer-logo .logo {
+footer nav .logo-copyright .footer-logo {
+  padding: 30px 0 0 30px;
+}
+
+footer nav .logo-copyright .footer-logo .logo {
+  line-height: 50px;
   color: #494b4f;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 25px;
 }
 
-footer nav .footer-logo .logo .logo-dot {
+footer nav .logo-copyright .footer-logo .logo .logo-dot {
   font-size: 30px;
   color: red;
 }
 
+footer nav .logo-copyright .copyright {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #bbbbbd;
+  margin-left: 30px;
+}
+
 footer nav ul {
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 0px 24px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
