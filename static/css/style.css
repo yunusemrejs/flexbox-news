@@ -47,8 +47,6 @@
 html,
 body {
   font-weight: bold;
-  height: 100%;
-  overflow: auto;
   overflow-x: hidden;
 }
 
