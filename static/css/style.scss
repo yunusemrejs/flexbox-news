@@ -65,11 +65,11 @@ body {
 body {
 	background-color: $page-background;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
 	flex: 1 1 auto;
 }
 header {
-	position: relative;
 	display: flex;
 	align-items: flex-start;
 	font-family: $main-font;
