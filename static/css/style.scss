@@ -6,6 +6,7 @@ $footer-links: white;
 $footer-background: rgb(29, 31, 36);
 $main-font: "Lato", sans-serif;
 $logo-font: "Lato", sans-serif;
+$category-font: "Oswald", sans-serif;
 $logo-color: #1d1f24;
 $card-margin: 20px;
 
@@ -239,7 +240,7 @@ footer {
 	}
 	.category {
 		font-size: 12px;
-		font-family: "Oswald", sans-serif;
+		font-family: $category-font;
 		font-weight: 600;
 		position: absolute;
 		left: -5px;
