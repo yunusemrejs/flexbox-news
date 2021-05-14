@@ -301,7 +301,9 @@ footer ul li a {
 }
 
 .card .category {
+  font-size: 12px;
   font-family: "Oswald", sans-serif;
+  font-weight: 600;
   position: absolute;
   left: -5px;
   bottom: 8%;
@@ -318,10 +320,10 @@ footer ul li a {
   letter-spacing: 2px;
   font-size: 0.75em;
   font-family: "Lato", sans-serif;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 3.1%;
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 17px;
   background-color: #ff565c;
 }
 
