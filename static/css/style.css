@@ -3,14 +3,25 @@
   nav {
     max-height: 70px;
   }
-  /*.header-left {
-		display: flex;
-		align-items: center;
-		flex: 0 0 auto;
-		.header-logo {
-			padding: 20px 0 20px 20px !important;
-		}
-	}*/
+  nav .header-left ul {
+    display: none !important;
+  }
+  .card {
+    padding: 20px 0 20px 0 !important;
+  }
+  .card .category {
+    width: 136px;
+    height: 40px;
+  }
+  .mid-card .card-image {
+    width: 100%;
+    height: 265px;
+  }
+  .small-card .card-image {
+    width: 100%;
+    height: 175px;
+    margin: auto;
+  }
   .flex-list .column {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
@@ -20,6 +31,18 @@
 @media (min-width: 480px) and (max-width: 1024px) {
   nav {
     max-height: 80px;
+  }
+  nav .header-left ul {
+    display: none !important;
+  }
+  .mid-card .card-image {
+    width: 100%;
+    height: 330px;
+  }
+  .small-card .card-image {
+    width: 100%;
+    height: 165px;
+    margin: auto;
   }
   .flex-list .column {
     -ms-flex-preferred-size: 50% !important;
@@ -48,6 +71,15 @@
   nav {
     max-height: 90px;
   }
+  .mid-card .card-image {
+    width: 100%;
+    height: 400px;
+  }
+  .small-card .card-image {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+  }
   .flex-list .column {
     -ms-flex-preferred-size: 33.3333% !important;
         flex-basis: 33.3333% !important;
@@ -65,6 +97,7 @@ html,
 body {
   font-weight: bold;
   overflow-x: hidden;
+  overflow: auto;
 }
 
 /*utilities*/
@@ -166,6 +199,16 @@ header nav .header-left ul li a {
   color: #d2d2d2;
 }
 
+header nav .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px 0px 0px;
+}
+
 main {
   z-index: 3;
   max-width: 100%;
@@ -173,16 +216,16 @@ main {
 }
 
 footer {
-  display: block;
-  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Roboto", sans-serif;
   background-color: #1d1f24;
   width: 100%;
-  border-bottom: 2px solid black;
 }
 
 footer ul {
-  padding: 50px;
+  padding: 30px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,7 +291,6 @@ footer ul li a {
 
 .card .card-image {
   position: relative;
-  width: 100%;
 }
 
 .card .card-image img {
@@ -260,8 +302,6 @@ footer ul li a {
   position: absolute;
   left: -5px;
   bottom: 8%;
-  width: 33%;
-  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,13 +332,5 @@ footer ul li a {
   color: #5f6165;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-}
-
-.mid-card .card-image {
-  height: 400px;
-}
-
-.small-card .card-image {
-  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
