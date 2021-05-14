@@ -121,17 +121,14 @@ main {
 }
 
 footer {
-	position: relative;
-	bottom: 0px;
 	z-index: 1;
 	font-family: $main-font;
-	padding-top: 40px;
-	padding-bottom: 40px;
 	display: flex;
 	background-color: $footer-background;
 	width: 100%;
 	border-bottom: 2px solid black;
 	ul {
+		padding: 50px;
 		margin: auto;
 		display: flex;
 		li {

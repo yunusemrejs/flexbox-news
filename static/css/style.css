@@ -160,12 +160,8 @@ main {
 }
 
 footer {
-  position: relative;
-  bottom: 0px;
   z-index: 1;
   font-family: "Roboto", sans-serif;
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,6 +171,7 @@ footer {
 }
 
 footer ul {
+  padding: 50px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
