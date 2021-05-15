@@ -1,0 +1,136 @@
+@import "style";
+.main-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	margin-top: -20px;
+	padding: 115px 0 200px 160px;
+	background-color: #ff565c;
+	p {
+		color: #fff;
+		padding-right: 45px;
+		padding-top: 32px;
+		padding-bottom: 60px;
+		display: flex;
+		flex-wrap: wrap;
+		font: $lato-regular;
+		letter-spacing: 1px;
+		font-size: 14px;
+	}
+	.form-div {
+		min-width: 460px;
+		width: 460px;
+		form {
+			display: flex;
+			width: 80%;
+			flex-direction: column;
+			input {
+				border: 2px solid #ffabae;
+				color: white;
+				background-color: transparent;
+				padding: 30px 30px 34px 30px;
+				line-height: 14px;
+				margin: 10px 0 10px 0;
+			}
+			input::placeholder {
+				font: $oswald-regular;
+				color: white;
+			}
+			input[type="submit"] {
+				font: $oswald-regular;
+				border: 0px;
+				background-color: #1d1f24;
+			}
+		}
+	}
+	.image {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		img {
+			width: 95%;
+			height: auto;
+		}
+	}
+}
+.contact-info {
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-left: -205px;
+		li {
+			padding-left: 245px;
+			padding-top: 60px;
+			padding-bottom: 60px;
+			h5 {
+				font: $oswald-medium;
+				color: #ff565c;
+				font-size: 12px;
+			}
+			p {
+				font: $lato-bold;
+				font-size: 18px;
+				padding-top: 30px;
+			}
+		}
+	}
+}
+iframe {
+	width: 100%;
+}
+
+//media query
+@media (max-width: 480px) {
+	.main-container {
+		padding: 0;
+		flex-direction: column;
+		.image {
+			display: flex;
+			align-items: flex-start;
+			height: 450px;
+			order: 1;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.form-div {
+			padding: 80px 0 80px 0;
+			order: 2;
+			margin: auto;
+			form {
+				margin: auto;
+			}
+		}
+	}
+	.contact-info {
+		ul {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 1023px) {
+	.main-container {
+		padding: 0;
+		flex-direction: column;
+		.image {
+			display: flex;
+			align-items: flex-start;
+			height: 450px;
+			order: 1;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.form-div {
+			padding: 80px 0 80px 0;
+			order: 2;
+			margin: auto;
+		}
+	}
+}
+@media (min-width: 1024px) {
+}
