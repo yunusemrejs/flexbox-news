@@ -261,7 +261,6 @@ footer nav .footer-right form {
 }
 
 footer nav .footer-right form input {
-  height: 35px;
   font-size: 12px;
   line-height: 10px;
   letter-spacing: 1px;
@@ -276,6 +275,7 @@ footer nav .footer-right form input[type="email"] {
 
 footer nav .footer-right form input[type="submit"] {
   font: 500 1em "Oswald", sans-serif;
+  line-height: 16px;
   background-color: #ff565c;
   color: white;
   padding: 11px 30px 14px 30px;
