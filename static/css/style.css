@@ -299,6 +299,58 @@ footer nav .footer-right form input[type="submit"] {
   color: #fff;
 }
 
+.category {
+  font: 500 1em "Oswald", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.75em;
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  background-color: #ff565c;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  color: #202121;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  display: block;
+  width: 100%;
+  margin: -10px 0;
+}
+
+.card h3 {
+  font: 700 1em "Lato", sans-serif;
+  font-size: 19px;
+  padding-top: 2%;
+}
+
+.card .card-text {
+  padding-top: 12px;
+  color: #5f6165;
+  font: 400 1em "Lato", sans-serif;
+  font-size: 18px;
+  width: 70%;
+  line-height: 2 !important;
+}
+
 @media (max-width: 480px) {
   nav {
     max-height: 70px;

@@ -207,6 +207,47 @@ footer {
 .white-header {
 	color: #fff;
 }
+.category {
+	font: $oswald-medium;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 0.75em;
+	padding-left: 25px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 17px;
+	background-color: rgb(255, 86, 92);
+}
+.card {
+	position: relative;
+	padding: 20px;
+	color: #202121;
+	.card-image {
+		position: relative;
+		img {
+			display: block;
+			width: 100%;
+			margin: -10px 0;
+		}
+	}
+	h3 {
+		font: $lato-bold;
+		font-size: 19px;
+		padding-top: 2%;
+	}
+	.card-text {
+		padding-top: 12px;
+		color: #5f6165;
+		font: $lato-regular;
+		font-size: 18px;
+		width: 70%;
+		line-height: 2 !important;
+	}
+}
 //media query
 @media (max-width: 480px) {
 	nav {

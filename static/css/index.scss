@@ -11,6 +11,8 @@
 		.card-image {
 			width: 100%;
 			height: 265px;
+			overflow: hidden;
+			margin: 0;
 		}
 	}
 	.small-card {
@@ -18,6 +20,8 @@
 			width: 100%;
 			height: 175px;
 			margin: auto;
+			overflow: hidden;
+			margin: 0;
 		}
 	}
 	.flex-list {
@@ -31,6 +35,8 @@
 		.card-image {
 			width: 100%;
 			height: 330px;
+			overflow: hidden;
+			margin: 0;
 		}
 	}
 	.small-card {
@@ -38,6 +44,8 @@
 			width: 100%;
 			height: 165px;
 			margin: auto;
+			overflow: hidden;
+			margin: 0;
 		}
 	}
 	.flex-list {
@@ -60,6 +68,8 @@
 		.card-image {
 			width: 100%;
 			height: 400px;
+			overflow: hidden;
+			margin: 0;
 		}
 	}
 	.small-card {
@@ -67,6 +77,8 @@
 			width: 100%;
 			height: 200px;
 			margin: auto;
+			overflow: hidden;
+			margin: 0;
 		}
 	}
 	.flex-list {
@@ -76,46 +88,10 @@
 	}
 }
 //components
-
-.card {
-	position: relative;
-	padding: 20px;
-	color: #202121;
-	.card-image {
-		position: relative;
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	}
-	.category {
-		font: $oswald-medium;
-		position: absolute;
-		left: -5px;
-		bottom: 8%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: white;
-		letter-spacing: 2px;
-		font-size: 0.75em;
-		padding-left: 25px;
-		padding-right: 30px;
-		padding-top: 10px;
-		padding-bottom: 17px;
-		background-color: rgb(255, 86, 92);
-	}
-	h3 {
-		font: $lato-bold;
-		font-size: 19px;
-		padding-top: 2%;
-	}
-	.card-text {
-		padding-top: 12px;
-		color: #5f6165;
-		font: $lato-regular;
-		font-size: 14px;
-	}
+.category {
+	position: absolute;
+	left: -5px;
+	bottom: 8%;
 }
 .flex-list {
 	display: flex;
@@ -131,5 +107,12 @@
 		padding-right: 20px;
 		flex-direction: column;
 		flex-wrap: wrap;
+	}
+}
+.small-card {
+	.card-image {
+		img {
+			margin: -130px 0 !important;
+		}
 	}
 }
