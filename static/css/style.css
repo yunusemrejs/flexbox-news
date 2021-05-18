@@ -331,9 +331,10 @@ footer nav .footer-right form input[type="submit"] {
 }
 
 .card .card-image img {
-  display: block;
   width: 100%;
-  margin: -10px 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card h3 {

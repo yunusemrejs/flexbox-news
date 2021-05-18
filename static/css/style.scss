@@ -229,9 +229,9 @@ footer {
 	.card-image {
 		position: relative;
 		img {
-			display: block;
 			width: 100%;
-			margin: -10px 0;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	h3 {
