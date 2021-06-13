@@ -99,6 +99,7 @@ header nav .header-left .header-logo .logo .logo-dot {
 }
 
 header nav .header-left ul {
+  padding-bottom: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,10 +113,14 @@ header nav .header-left ul li {
 }
 
 header nav .header-left ul li a {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-decoration: none;
   color: #d2d2d2;
+}
+
+header nav .header-left ul li a:hover {
+  color: black;
 }
 
 header nav .header-right {
@@ -165,25 +170,13 @@ footer nav .footer-left .logo-copyright {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer nav .footer-left .logo-copyright .footer-logo {
-  padding: 30px 0 0 30px;
-}
-
-footer nav .footer-left .logo-copyright .footer-logo .logo {
-  line-height: 50px;
-  color: #494b4f;
-  font: 600 1em "Oswald", sans-serif;
-  font-size: 25px;
-}
-
-footer nav .footer-left .logo-copyright .footer-logo .logo .logo-dot {
-  font-size: 30px;
-  color: red;
+  padding: 0 0 15px 30px;
 }
 
 footer nav .footer-left .logo-copyright .copyright {
@@ -193,7 +186,6 @@ footer nav .footer-left .logo-copyright .copyright {
 }
 
 footer nav .footer-left ul {
-  padding: 10px 0px 0px 24px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,6 +203,7 @@ footer nav .footer-left ul {
 
 footer nav .footer-left ul li {
   width: 180px;
+  padding: 10px 0 0 0;
 }
 
 footer nav .footer-left ul li a {
@@ -219,6 +212,10 @@ footer nav .footer-left ul li a {
   font-size: 14px;
   text-decoration: none;
   color: white;
+}
+
+footer nav .footer-left ul li a:hover {
+  color: #ff565c;
 }
 
 footer nav .footer-right {
@@ -235,7 +232,7 @@ footer nav .footer-right {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 40px 30px;
 }
 
 footer nav .footer-right .social-media {
@@ -261,6 +258,7 @@ footer nav .footer-right form {
 }
 
 footer nav .footer-right form input {
+  height: 35px;
   font-size: 12px;
   line-height: 10px;
   letter-spacing: 1px;
@@ -297,6 +295,60 @@ footer nav .footer-right form input[type="submit"] {
 
 .white-header {
   color: #fff;
+}
+
+.category {
+  font: 500 1em "Oswald", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.75em;
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  background-color: #ff565c;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  color: #202121;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card h3 {
+  width: 60%;
+  font: 700 1em "Lato", sans-serif;
+  font-size: 25px;
+  padding-top: 2%;
+}
+
+.card .card-text {
+  padding-top: 12px;
+  color: #5f6165;
+  font: 400 1em "Lato", sans-serif;
+  font-size: 18px;
+  width: 70%;
+  line-height: 1.5 !important;
 }
 
 @media (max-width: 480px) {
