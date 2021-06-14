@@ -358,12 +358,12 @@ footer .footer-right form input[type="submit"] {
 }
 
 .card-footer ul li img {
-  width: 24px !important;
-  height: 20px !important;
+  width: 22px !important;
+  height: 16px !important;
 }
 
 .card-footer span {
-  margin-left: 5px;
+  margin-left: 10px;
   font: 700 1em "Lato", sans-serif;
 }
 
@@ -433,6 +433,9 @@ footer .footer-right form input[type="submit"] {
 }
 
 @media (min-width: 1024px) and (max-width: 1360px) {
+  footer nav {
+    padding-top: 50px !important;
+  }
   .footer-right {
     width: 100% !important;
     -webkit-box-align: start !important;

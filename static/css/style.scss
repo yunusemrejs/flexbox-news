@@ -245,13 +245,13 @@ footer {
 			display: flex;
 			padding-left: 25px;
 			img {
-				width: 24px !important;
-				height: 20px !important;
+				width: 22px !important;
+				height: 16px !important;
 			}
 		}
 	}
 	span {
-		margin-left: 5px;
+		margin-left: 10px;
 		font: $lato-bold;
 	}
 }
@@ -310,6 +310,11 @@ footer {
 	}
 }
 @media (min-width: 1024px) and (max-width: 1360px) {
+	footer {
+		nav {
+			padding-top: 50px !important;
+		}
+	}
 	.footer-right {
 		width: 100% !important;
 		align-items: flex-start !important;
