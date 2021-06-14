@@ -57,7 +57,31 @@
 		}
 	}
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1360px) {
+	.mid-card {
+		.card-image {
+			width: 100%;
+			height: 400px;
+			margin: 0;
+		}
+	}
+	.small-card {
+		.card-image {
+			width: 100%;
+			height: 200px;
+			margin: 0;
+		}
+	}
+	.flex-list {
+		.column {
+			flex-basis: 33.3333% !important;
+		}
+	}
+	nav {
+		padding-top: 50px !important;
+	}
+}
+@media (min-width: 1361px) {
 	.mid-card {
 		.card-image {
 			width: 100%;
